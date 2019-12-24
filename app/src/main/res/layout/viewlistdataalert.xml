@@ -1,0 +1,1608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.1"
+        android:background="@drawable/background_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_collectiondetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Vehicle Details"
+            android:textColor="#374176"
+            android:textSize="20dp"
+            android:textStyle="bold|normal"
+            android:typeface="serif" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/edittext_baground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_collectiondate"-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Collection Date"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_CashCollectiondate"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Unit Name"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_unitname"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:gravity="center|left"-->
+
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Activity Name"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_activityname"-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:inputType="textImeMultiLine"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_hotel"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_marginTop="10dp"-->
+
+                <!--                        android:gravity="center"-->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="130dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                          -->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text="Accommodation"-->
+                <!--                            android:textColor="@color/colorPrimaryDark"-->
+                <!--                            android:textSize="12dp"-->
+                <!--                            android:textStyle="normal|bold" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:text=":"-->
+                <!--                            android:textColor="@color/black"-->
+                <!--                            android:textSize="20dp" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tv_Accommodation"-->
+                <!--                            android:layout_width="100dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text=""-->
+                <!--                            android:textColor="#000"-->
+                <!--                            android:textSize="12dp" />-->
+                <!--                    </LinearLayout>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="130dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                          -->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text="Catering"-->
+                <!--                            android:textColor="@color/colorPrimaryDark"-->
+                <!--                            android:textSize="12dp"-->
+                <!--                            android:textStyle="normal|bold" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:text=":"-->
+                <!--                            android:textColor="@color/black"-->
+                <!--                            android:textSize="20dp" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tv_catering"-->
+                <!--                            android:layout_width="100dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text=""-->
+                <!--                            android:textColor="#000"-->
+                <!--                            android:textSize="12dp" />-->
+                <!--                    </LinearLayout>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="130dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                          -->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text="Bar Income"-->
+                <!--                            android:textColor="@color/colorPrimaryDark"-->
+                <!--                            android:textSize="12dp"-->
+                <!--                            android:textStyle="normal|bold" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:text=":"-->
+                <!--                            android:textColor="@color/black"-->
+                <!--                            android:textSize="20dp" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tv_barincome"-->
+                <!--                            android:layout_width="100dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text=""-->
+                <!--                            android:textColor="#000"-->
+                <!--                            android:textSize="12dp" />-->
+                <!--                    </LinearLayout>-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_transporation"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:orientation="horizontal"-->
+                <!--                        android:visibility="gone">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="130dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                          -->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text="Accommodation"-->
+                <!--                            android:textColor="@color/colorPrimaryDark"-->
+                <!--                            android:textSize="12dp"-->
+                <!--                            android:textStyle="normal|bold" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:text=":"-->
+                <!--                            android:textColor="@color/black"-->
+                <!--                            android:textSize="20dp" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tv_transportAccomadation"-->
+                <!--                            android:layout_width="100dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text=""-->
+                <!--                            android:textColor="#000"-->
+                <!--                            android:textSize="12dp" />-->
+                <!--                    </LinearLayout>-->
+
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="130dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                          -->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text="Transport Income"-->
+                <!--                            android:textColor="@color/colorPrimaryDark"-->
+                <!--                            android:textSize="12dp"-->
+                <!--                            android:textStyle="normal|bold" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:text=":"-->
+                <!--                            android:textColor="@color/black"-->
+                <!--                            android:textSize="20dp" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tv_transport"-->
+                <!--                            android:layout_width="100dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text=""-->
+                <!--                            android:textColor="#000"-->
+                <!--                            android:textSize="12dp" />-->
+                <!--                    </LinearLayout>-->
+
+                <!--                    <LinearLayout-->
+                <!--                        android:layout_width="match_parent"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_gravity="center"-->
+                <!--                        android:layout_marginTop="10dp"-->
+                <!--                        android:visibility="gone"-->
+                <!--                        android:gravity="center"-->
+                <!--                        android:orientation="horizontal">-->
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="130dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                          -->
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text="Other Income"-->
+                <!--                            android:textColor="@color/colorPrimaryDark"-->
+                <!--                            android:textSize="12dp"-->
+                <!--                            android:textStyle="normal|bold" />-->
+
+
+                <!--                        <TextView-->
+                <!--                            android:layout_width="wrap_content"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:text=":"-->
+                <!--                            android:textColor="@color/black"-->
+                <!--                            android:textSize="20dp" />-->
+
+                <!--                        <TextView-->
+                <!--                            android:id="@+id/tv_transportotherincome"-->
+                <!--                            android:layout_width="100dp"-->
+                <!--                            android:layout_height="30dp"-->
+                <!--                            android:layout_marginLeft="10dp"-->
+                <!--                            android:layout_weight="1"-->
+
+                <!--                            android:gravity="center|left"-->
+                <!--                            android:padding="3dp"-->
+                <!--                            android:text=""-->
+                <!--                            android:textColor="#000"-->
+                <!--                            android:textSize="12dp" />-->
+                <!--                    </LinearLayout>-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_boating"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Boating Income"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_boatingamount"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_soundandlights"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Sound and Lights "-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_soundlights"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_otherincome"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Other Income"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_otherincome"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_eco"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginTop="10dp"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal"-->
+                <!--                    android:visibility="gone">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Other Income"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_ecootherincome"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Total Sales"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_totalsales"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Cash Collection"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_CashCollection"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Online"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_Online"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="CRO"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_CRO"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Credit Card"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_CreditCard"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Paytm"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_Paytm"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Cheque"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_Cheque"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="match_parent"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Credit Sales"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_CreditSales"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Advance Income"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_AdvanceIncome"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Discount"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_discount"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Total Collection"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_TotalCollection"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Bank Remittance"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_BankRemittance"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <!--                <LinearLayout-->
+                <!--                    android:id="@+id/ll_balancetoberemitted"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <TextView-->
+
+
+                <!--                        android:layout_width="130dp"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                      -->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text="Balance To Be Remitted"-->
+                <!--                        android:textColor="@color/colorPrimaryDark"-->
+                <!--                        android:textSize="12dp"-->
+                <!--                        android:textStyle="normal|bold" />-->
+
+
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:text=":"-->
+                <!--                        android:textColor="@color/black"-->
+                <!--                        android:textSize="20dp" />-->
+
+                <!--                    <TextView-->
+                <!--                        android:id="@+id/tv_UnitMR"-->
+                <!--                        android:layout_width="100dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_weight="1"-->
+
+                <!--                        android:gravity="center|left"-->
+                <!--                        android:padding="3dp"-->
+                <!--                        android:text=""-->
+                <!--                        android:textColor="#000"-->
+                <!--                        android:textSize="12dp" />-->
+                <!--                </LinearLayout>-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+                        android:text="Vehicle Name"
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_name"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:id="@+id/gameTimer"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Vehicle Type"
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_vt"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Status "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_st"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Since From  "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_sf"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Speed(KMPH) "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_speed"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="GPS "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_gps"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="AC "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_ac"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+                        android:text="Location "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_loc"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Driver Name "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_dn"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Mobile No. "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_ql_dph"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

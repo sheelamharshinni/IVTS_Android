@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "1011327125791",
+    "firebase_url": "https://livetracking-683d7.firebaseio.com",
+    "project_id": "livetracking-683d7",
+    "storage_bucket": "livetracking-683d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011327125791:android:ccb9336cd2d516916b482a",
+        "android_client_info": {
+          "package_name": "com.spartons.driverapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011327125791-7u6m4h871ihsjm5lj05d98lbmjdvovhe.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spartons.driverapp",
+            "certificate_hash": "aead7138a9d8cfa6f15101d062f54f8884ad8f16"
+          }
+        },
+        {
+          "client_id": "1011327125791-gpgjpdmcba60msvnq6voeuatp5or078p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAVxwl_PixX3NS1bjygeJR5uNoNW0yJcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011327125791-gpgjpdmcba60msvnq6voeuatp5or078p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011327125791:android:cbfd10b3de9c05586b482a",
+        "android_client_info": {
+          "package_name": "com.tecdatum.Tracking.School"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011327125791-icrag7s2264o5fh4b748ti7fi0ieo5q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tecdatum.Tracking.School",
+            "certificate_hash": "aead7138a9d8cfa6f15101d062f54f8884ad8f16"
+          }
+        },
+        {
+          "client_id": "1011327125791-gpgjpdmcba60msvnq6voeuatp5or078p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAVxwl_PixX3NS1bjygeJR5uNoNW0yJcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011327125791-gpgjpdmcba60msvnq6voeuatp5or078p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011327125791:android:2868dda62b4542486b482a",
+        "android_client_info": {
+          "package_name": "com.techdatum.livetraking2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1011327125791-lf72t42isuuq3u8d9qldeoucom3hnf89.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.techdatum.livetraking2",
+            "certificate_hash": "aead7138a9d8cfa6f15101d062f54f8884ad8f16"
+          }
+        },
+        {
+          "client_id": "1011327125791-gpgjpdmcba60msvnq6voeuatp5or078p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAVxwl_PixX3NS1bjygeJR5uNoNW0yJcQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011327125791-gpgjpdmcba60msvnq6voeuatp5or078p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

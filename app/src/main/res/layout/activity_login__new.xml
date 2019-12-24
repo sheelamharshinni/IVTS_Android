@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/background_login"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <LinearLayout
+        android:id="@+id/ll_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Integrated Vehicle Tracking System"
+                android:textColor="@color/textcolor_white"
+                android:textSize="@dimen/login_header"
+                android:textStyle="normal"
+                android:typeface="normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="(IVTS)"
+                android:textColor="@color/textcolor_white"
+                android:textSize="@dimen/login_header"
+                android:textStyle="normal"
+                android:typeface="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/et_mobilenumber"
+                android:layout_width="351dp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/submit"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:paddingLeft="@dimen/_12sdp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_white"
+                android:textColorHint="@color/hintcolor"
+                android:textSize="@dimen/_15ssp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/savecredentials"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/textcolor_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Savecredentials"
+                android:textColor="@color/textcolor_white"
+                android:textSize="@dimen/_14sdp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/sign_in"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/submit_button"
+            android:gravity="center"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor_color"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/tv_error_tr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:textColor="#7e1915"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_linear"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal"
+        android:text="Parent Registration"
+        android:textAllCaps="false"
+        android:textColor="@color/textcolor_white"
+        android:textSize="@dimen/_10sdp"
+        android:visibility="gone" />
+
+
+    <include
+        layout="@layout/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

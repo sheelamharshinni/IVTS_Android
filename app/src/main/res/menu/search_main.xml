@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SearchResultsActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Vehicle No(Ex: Bichkunda - SIP1 TS9PA1035) " />
+
+    <item
+        android:id="@+id/m1"
+        android:title="Vehicle No(Ex: Bichkunda - SIP1 TS9PA1035)"
+        android:visible="false"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_search" />
+</menu>

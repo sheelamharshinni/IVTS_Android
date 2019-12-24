@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            style="@style/CardView.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/textcolor_white"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_vehiclesadapter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bus_running"
+                        android:tag="image_tag" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:orientation="vertical">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="0dp">
+
+                                <TextView
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Vehicle"
+                                    android:textColor="#302828"
+                                    android:textSize="10dp"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="-"
+                                    android:textColor="#000"
+                                    android:visibility="gone" />
+
+                                <TextView
+                                    android:id="@+id/textViewName"
+                                    android:layout_width="220dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.3"
+                                    android:text=""
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="14dp" />
+
+
+                            </TableRow>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:orientation="horizontal"
+                                android:padding="0dp"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Location "
+                                        android:textColor="#302828"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".25"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text=":"
+                                        android:textColor="#000" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.75"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/textViewVersion"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/textcolor_color"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="0dp"
+                                android:weightSum="3">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Last Updated Date &amp; Time "
+                                        android:textColor="#302828"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight=".25"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:text=":"
+                                        android:textColor="#000" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.75"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/sincefrom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/textcolor_color"
+                                        android:textSize="14dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <TextView
+
+                                android:id="@+id/tv_more"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|right"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="More Info"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="12dp"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/expand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="10dp"
+                            android:tag="image_tag"
+                            app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+
+                        <ImageView
+                            android:id="@+id/collapse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="5dp"
+                            android:layout_marginTop="10dp"
+                            android:tag="image_tag"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_arrow_drop_up_black_24dp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:id="@+id/text_MapName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+
+                >
+
+
+                <RadioGroup
+                    android:id="@+id/rg_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <RadioButton
+                        android:id="@+id/rde_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/colorPrimary"
+                        android:checked="true"
+                        android:text="Live Status"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/rdr_Livetracking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="Live Tracking"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp" />
+
+                    <RadioButton
+                        android:id="@+id/rdr_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_weight="0.5"
+                        android:buttonTint="@color/colorPrimary"
+                        android:text="History Tracking"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:id="@+id/select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="23dp"
+                        android:layout_gravity="right"
+                        android:src="@mipmap/ic_menu"
+                        android:visibility="gone" />
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/list_item_map_view_mapview"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp" />
+
+
+                <ImageView
+                    android:id="@+id/Track_info"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@mipmap/ic_info"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/tv1_chart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Distance Vs Time Chart(Last 24 Hrs) "
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/linechart_distance"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:background="@drawable/edittext_baground"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/ll_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:text="   Integrated Report Of The Vehicle : "
+                        android:textSize="15dp"
+                        android:textStyle="bold|italic" />
+
+
+                </RelativeLayout>
+
+
+                <include layout="@layout/track_info" />
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!--      </ScrollView>-->
+    </LinearLayout>
+
+
+</RelativeLayout>

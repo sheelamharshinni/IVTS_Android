@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:id="@+id/ll_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_back"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/textcolor_color"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/textcolor_white"
+            android:textSize="14dp"
+            android:typeface="serif" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Month Summary Report "
+                android:textColor="@color/textcolor_color"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_vehiclename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="vehi"
+                android:textColor="@color/textcolor_color"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.6"
+                android:gravity="center|right"
+                android:text="Month &amp; Year"
+                android:textColor="@color/textcolor_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:text=":"
+                android:textColor="@color/textcolor_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_12ssp" />
+
+            <Spinner
+                android:id="@+id/sp_month_alert"
+                style="@style/MyAlertDialogStyle"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.1"
+                android:background="@drawable/submit_button"
+                android:drawableLeft="@drawable/icon"
+                android:gravity="center"
+                android:inputType="text"
+                android:popupBackground="#fff"
+                android:textColor="@color/textcolor_white"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/textcolor_color"
+            android:gravity="center"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/textcolor_white" />
+
+        <LinearLayout
+            android:id="@+id/ll_Datafound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="0dp">
+
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:text="Month Summary "
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="14dp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_Month_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginTop="-5dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=""
+                    android:textColor="@color/textcolor_black"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Distance (KMS)"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_dist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Max Speed (KMPH)"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_mspeed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittext_baground"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="Duration (HH:MM)"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"></TextView>
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Travel Time"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_wrk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Idle Time"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_idle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="Stop Time"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_stop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:visibility="gone" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp"
+                android:visibility="gone">
+
+                <TextView
+
+                    android:layout_width="160dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittext_baground"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="No Signal"
+                    android:textColor="#ffffff"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_nosignal"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="2dp"
+
+                android:padding="0dp">
+
+                <TextView
+
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:text="AC Usage Time"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/tv_m_ac"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+
+                    android:layout_weight="0.3"
+                    android:padding="5dp"
+                    android:text=" "
+                    android:textColor="#3e2c2c"
+                    android:textSize="12dp" />
+
+
+            </TableRow>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="135dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/list_monthday_report"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.1"
+                android:background="@color/textcolor_color"
+                android:gravity="center"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

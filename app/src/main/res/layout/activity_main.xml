@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <FrameLayout
+        android:id="@+id/driverStatusLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/driverStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:text="@string/offline"
+            android:textColor="@color/textcolor_white"
+            android:textSize="22sp" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/driverStatusSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:checked="false"
+            android:theme="@style/SCBSwitch" />
+
+    </FrameLayout>
+
+    <fragment
+        android:id="@+id/supportMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/driverStatusLayout"
+        android:layout_above="@+id/lay_bottommenu"
+        tools:context="spartons.com.frisbeeGo.fragments.MapFragment" />
+
+
+    <LinearLayout
+        android:id="@+id/lay_bottommenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemIconTint="@color/textcolor_color"
+            app:menu="@menu/navigation_new_parent"
+            app:theme="@style/NavigationDrawerStyle" />
+
+        <include
+            layout="@layout/footer1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

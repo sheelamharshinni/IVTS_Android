@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@mipmap/ic_dashboard"
+        android:title="@string/title_dashboard" />
+    <item
+        android:id="@+id/navigation_qv"
+        android:icon="@mipmap/ic_list"
+        android:title="QuickView" />
+    <item
+        android:id="@+id/navigation_ls"
+        android:icon="@mipmap/ic_lstats"
+        android:title="Live Status" />
+    <item
+        android:id="@+id/navigation_nbv"
+        android:icon="@mipmap/ic_nearby"
+        android:title="Near By Vehicles" />
+    <item
+        android:id="@+id/navigation_report"
+        android:icon="@mipmap/ic_report"
+        android:title="Report" />
+
+    <!--<item-->
+    <!--android:id="@+id/navigation_luv"-->
+    <!--android:visible="false"-->
+    <!--android:icon="@drawable/ic_notifications_black_24dp"-->
+    <!--android:title="Locate Your Vehicle" />-->
+</menu>

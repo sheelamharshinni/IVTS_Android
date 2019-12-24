@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/ll_report"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Exception Report "
+                android:textColor="#302828"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tv_vehiclename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv11"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text=""
+                android:textColor="#302828"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/tv_vname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/id"
+                android:text=""
+                android:textSize="16dp"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_Exception_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="11dp"
+            android:gravity="center"
+            android:text=" "
+            android:textColor="#3e2c2c"
+            android:textSize="12dp" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/edittext_baground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:id="@+id/textView115"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginTop="5dp"
+                        android:text="Exception Report : "
+                        android:textSize="14dp"
+                        android:textStyle="bold|italic"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000"
+                        android:visibility="gone" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:id="@+id/textView16"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        android:padding="5dp"
+                        android:text="Stop Time more than 4 hrs"
+                        android:textColor="@color/textcolor_color"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_weight="0.3"
+                        android:text=" 15-4-558, Afzalgunj Rd, Mahaboob Gunj, Kaman, Gowliguda, Hyderabad, Telangana 500012, India"
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:padding="0dp">
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:padding="0dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="140dp"
+                        android:layout_height="39dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edittext_baground"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Stop Time more than 4 hrs"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" :"
+                        android:textColor="#000" />
+
+                    <TextView
+
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="130dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="@string/t6"
+                        android:textColor="@color/textcolor_color"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="130dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="@string/t5"
+                        android:textColor="@color/textcolor_color"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="130dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text="Movements(Kms)"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="12dp"
+                        android:textStyle="bold|normal"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" "
+                        android:textColor="#000" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:id="@+id/tv_A"
+                        android:layout_width="130dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text=" 2am to 6am"
+                        android:textColor="@color/textcolor_color"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+
+                    android:padding="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_B"
+                        android:layout_width="130dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text=" 2pm to 4 pm"
+
+                        android:textColor="@color/textcolor_color"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:id="@+id/tv_C"
+                        android:layout_width="130dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:gravity="center|left"
+                        android:padding="5dp"
+                        android:text=" 6pm to 9 pm"
+                        android:textColor="@color/textcolor_color"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:visibility="gone" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="2dp"
+
+                    android:padding="0dp"
+                    android:visibility="gone">
+
+
+                    <TextView
+
+                        android:layout_width="220dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:background="@drawable/edittext_baground"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="5PM to 12 AM"
+                        android:textColor="#ffffff"
+                        android:textSize="12dp"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_e_t7"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+                        android:padding="5dp"
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <Button
+                    android:id="@+id/bt_back"
+                    android:layout_width="135dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.1"
+                    android:background="@color/textcolor_color"
+                    android:gravity="center"
+                    android:text="Back"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textcolor_white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="65dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.SpeedReportFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_back"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/textcolor_color"
+            android:gravity="center"
+            android:text="Back"
+            android:textColor="@color/textcolor_white"
+            android:textSize="14dp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Stoppage Report"
+            android:textColor="@color/textcolor_color"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_vehiclename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#302828"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tv_fromandtodate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.4"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="#302828"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/menu_ic"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_weight=".6"
+                android:padding="5dp"
+                android:src="@mipmap/ic_menu"
+                android:tint="@color/textcolor_color" />
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_Datafound"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/tv_IdleStart"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@color/textcolor_color"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Stop Start Date &amp; Times"
+                        android:textColor="@color/textcolor_white" />
+
+                    <TextView
+                        android:id="@+id/tv_IdleEnd"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/textcolor_color"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Stop End Date &amp; Time"
+                        android:textColor="@color/textcolor_white" />
+
+                    <TextView
+                        android:id="@+id/tv_Duration"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/textcolor_color"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Stop Duration"
+                        android:textColor="@color/textcolor_white" />
+
+
+                    <TextView
+                        android:id="@+id/tv_Location"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/textcolor_color"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Location"
+                        android:textColor="@color/textcolor_white" />
+
+
+                </LinearLayout>
+
+                <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+                    android:id="@+id/list_monthday_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">IVTS</string>
+    <string name="t1">Stop Time \nmore than \n4 hrs</string>
+    <string name="t2">Movement\n8AM to 2PM</string>
+    <string name="t3">Movement\n2PM to 10PM</string>
+    <string name="t4">Movement\n10PM to 8AM</string>
+    <string name="t5">Geofence Count</string>
+    <string name="t6">Distance(Kms)</string>
+
+    <!--<string name="dd">\t \t \t \t  Duration (DD:HH:MM)\t \t \t\t \t \t</string>-->
+
+    <string name="dd">Duration</string>
+    <string name="title_activity_splas">Splas</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="datePickerTitle">DatePickup</string>
+    <string name="date_picker_title">pickdate</string>
+    <string name="title_activity_dash_board__home">DashBoard_Home</string>
+    <string name="edittext_hint"><font size="5">Vehicle No(Ex: Bichkunda - SIP1-TS9PA1035)</font></string>
+    <string name="title_activity_new_home_page">NewHomePage</string>
+    <string name="title_activity_dummy">Dummy</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_report__detail">Report_Detail</string>
+    <string name="title_activity_exception_report">Exception Report</string>
+    <string name="title_activity_performance_report">Performance Report</string>
+    <string name="title_activity_month_report">MonthReport</string>
+    <string name="title">Integrated Vehicle Tracking System(IVTS)</string>
+    <string name="google_direction_key">AIzaSyCL6a5z3GH088gmKurSnhSMzofVyuLmlvY</string>
+    <string name="need_location">Enable GPS SERVICE</string>
+    <string name="location_content">This app wants to change your device settings use GPS,Wi-Fi and cell networks for your location</string>
+    <string name="online_driver">Online</string>
+    <string name="offline">Offline</string>
+    <string name="logout_message">Are you sure to logout?</string>
+    <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="Savecredentials">Save Credentials</string>
+    <string name="edit_parentdetails">Update Parent Profile</string>
+</resources>

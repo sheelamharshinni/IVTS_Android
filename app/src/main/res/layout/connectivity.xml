@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/textcolor_color"
+        android:padding="12dp"
+        android:id="@+id/layout_one">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="No Internet Connection"
+            android:textSize="24dp"
+            android:textAppearance="?attr/textAppearanceSearchResultTitle"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:layout_below="@+id/layout_one"
+        android:padding="12dp"
+        android:id="@+id/layout_two">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Please try again later"
+            android:textAppearance="?attr/textAppearanceSearchResultTitle"
+            android:textColor="#393838"
+            android:textSize="20dp"
+            android:id="@+id/tvOne" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center"
+    android:gravity="bottom|center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="bottom|center"
+        android:text=" a tecdatum product"
+        android:textColor="#fff"
+        android:textSize="12dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Copyright © 2019"
+        android:textColor="#fff"
+        android:textSize="8dp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/tv_VersionCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:gravity="bottom|center"
+        android:text="version"
+        android:textColor="#fff"
+        android:textSize="8dp"
+        android:textStyle="normal" />
+</LinearLayout>

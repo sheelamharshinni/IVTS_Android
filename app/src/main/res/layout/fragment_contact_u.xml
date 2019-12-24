@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:padding="3dp"
+        android:text="Contact Us"
+        android:textColor="#f0f4f5"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:id="@+id/relativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/edittext_baground"
+                android:elevation="4dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="PS Name :"
+                            android:textColor="#000"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_accic_psname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text=""
+                            android:textColor="#dc0a0a"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_acci_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text=""
+                            android:textColor="#000"
+                            android:textSize="10dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Tecdatum Infoservices Private Limited"
+                            android:textAllCaps="false"
+                            android:textColor="#34497B"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Address:"
+                            android:textColor="#34497B"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="8-3-318/11/20, Level-I
+Jayaprakash Nagar, Yellareddyguda,
+Hyderabad- 500 073
+INDIA."
+                            android:textColor="#34497B"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+
+                            android:text="Support Team "
+                            android:textColor="#34497B"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Mail: "
+                            android:textColor="#34497B"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="support@tecdatum.in,teamit@tecdatum.in  "
+                            android:textColor="#34497B"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="Contact Numbers:"
+                            android:textColor="#34497B"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="040-40122117 , +91 7330811121,"
+                            android:textColor="#34497B"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="+91 7330811131(WhatsApp)"
+                            android:textColor="#34497B"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_accid_reset"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edittext_baground"
+                    android:text="Reset"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <Button
+                    android:id="@+id/btn_accid_submit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edittext_baground"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edittext_baground"
+                    android:text="View List"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edittext_baground"
+                    android:text="View OfflineData"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+
+
+                <Button
+                    android:id="@+id/btn_accid_offline"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/relativeLayout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/edittext_baground"
+                    android:text="View Offline Data"
+                    android:textAllCaps="false"
+                    android:textColor="#f7f8f9"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp" />
+            </LinearLayout>
+            <!--<Button-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="42dp"-->
+            <!--android:id="@+id/btn_log_in"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:background="@drawable/btn_background"-->
+            <!--android:text="Log In"-->
+            <!--android:textAllCaps="false"-->
+            <!--android:textSize="18sp"-->
+            <!--android:textColor="#2a3f54"-->
+            <!--android:layout_below="@+id/relativeLayout"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="16dp" />-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/alert_"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/alert"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_error_tr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:text="Enter username "
+                    android:textColor="#931e1e"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

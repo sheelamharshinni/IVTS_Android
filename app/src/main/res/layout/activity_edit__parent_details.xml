@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editdetails"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditParent_Details">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Update Profile"
+                android:textColor="@color/textcolor_color"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Student Class :"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp" />
+
+                <Spinner
+                    android:id="@+id/sp_class"
+                    style="@style/MyAlertDialogStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/submit_button"
+                    android:drawableLeft="@drawable/icon"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:popupBackground="#fff"
+                    android:textColor="@color/textcolor_white"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Student Name:"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/et_studentname"
+                    android:layout_width="0dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edittext_noneditable"
+                    android:enabled="false"
+                    android:hint="Enter"
+                    android:inputType="text"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.5"
+                    android:text="Parent Name :"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/et_ParentName"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+
+                    android:background="@drawable/edittext_baground"
+                    android:hint="Enter"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Display Name :"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/et_Displayname"
+                    android:layout_width="0dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edittext_baground"
+                    android:hint="Enter"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_weight="0.5"
+                    android:text="Mobile Number :"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/et_oldnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edittext_baground"
+
+                    android:enabled="false"
+                    android:hint="Enter"
+                    android:inputType="numberPassword"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="New Mobile Number :"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="invisible" />
+
+
+                <EditText
+                    android:id="@+id/et_newnumber"
+                    android:layout_width="0dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edittext_baground"
+                    android:hint="Enter"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="Confirm Mobile Number :"
+                    android:textColor="@color/textcolor_color"
+                    android:textSize="14dp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/_12ssp"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/et_confirmmobilenumber"
+                    android:layout_width="0dp"
+                    android:layout_height="39dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/edittext_baground"
+                    android:hint="Enter"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/textcolor_black"
+                    android:textColorHint="@color/hintcolor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_Cancel"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    android:background="@color/textcolor_color"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textcolor_white" />
+
+                <Button
+                    android:id="@+id/bt_updateinfo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/textcolor_color"
+                    android:gravity="center"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textcolor_white" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

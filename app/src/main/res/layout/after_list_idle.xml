@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_IdleStart"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_baground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_IdleEnd"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_baground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/tv_Duration"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_baground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+
+        <TextView
+            android:id="@+id/tv_Location"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_baground"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#000" />
+
+
+    </LinearLayout>
+</RelativeLayout>

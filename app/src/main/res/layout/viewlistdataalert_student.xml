@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:alpha="0.1"
+        android:background="@drawable/background_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/ic_clear_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_collectiondetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Student Details"
+            android:textColor="#374176"
+            android:textSize="20dp"
+            android:textStyle="bold|normal"
+            android:typeface="serif" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/edittext_baground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+                        android:text="Parent Mobile Number"
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_parentmobile"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+                        android:id="@+id/gameTimer"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Route Name"
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_routename"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Pickup Point Name "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_pickup"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Pickup Vehicle No."
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_pickupvehicleno"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Drop Point Name "
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_droppoint"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:layout_marginTop="5dp"
+                    android:padding="0dp">
+
+                    <TextView
+
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_weight="0.3"
+
+                        android:text="Drop Point Vehicle No."
+                        android:textColor="#302828"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/tv_droppointveh"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="11dp"
+
+                        android:layout_weight="0.3"
+
+                        android:text=" "
+                        android:textColor="#3e2c2c"
+                        android:textSize="12dp" />
+
+
+                </TableRow>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
