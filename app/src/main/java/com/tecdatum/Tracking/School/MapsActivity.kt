@@ -40,6 +40,7 @@ import com.tecdatum.Tracking.School.fragments.ExceptionReportFragment
 import com.tecdatum.Tracking.School.newConstants.Url_new
 import com.tecdatum.Tracking.School.newactivities.Edit_ParentDetails
 import com.tecdatum.Tracking.School.newactivities.HolidayActivity
+import com.tecdatum.Tracking.School.newactivities.PArentHistoryTrackingDetails
 import com.tecdatum.Tracking.School.newactivities.SplashScreen
 import com.tecdatum.Tracking.School.newhelpers.Vehiclepoints
 import com.tecdatum.Tracking.School.volley.VolleySingleton
@@ -86,8 +87,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     private var firstTimeFlag = true
     private var VehicleId: String? = null
     private var apiInterface: IGoogleApi? = null
-    var lat = 0.0
-    var lng = 0.0
+    var lat = 17.3850
+    var lng = 78.4867
     var circle: Circle? = null;
     var lattitude: Double? = null
     var Lonitude: Double? = null
@@ -98,6 +99,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     var VehicleName: String? = null
     var speed: String? = null
     var loc: String? = null
+    var MobNo: String? = null
     var statuscolor: String? = null
     var direction: String? = null
     var sincefrom: String? = null
@@ -105,7 +107,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     var liveedate: String? = null
     var vehicletype: String? = null
     var DriverName: String? = null
-    var MobNo: String? = null
     var UserName: String? = null
     var VechileId: String? = null
     var VehicleNumber: String? = null
@@ -152,6 +153,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
 
         val bb = getSharedPreferences(SplashScreen.MY_PREFS_NAME, Context.MODE_PRIVATE)
+        StartTime = bb.getString("StartTime", "")
+        EndTime = bb.getString("EndTime", "")
         UserName = bb.getString("ParentName", "")
         VehicleNumber = bb.getString("VehicleNumber", "")
         RouteName = bb.getString("RouteName", "")
@@ -159,8 +162,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         Live_Latitude = bb.getString("Live_Latitude", "")
         Live_Longitude = bb.getString("Live_Longitude", "")
-        StartTime = bb.getString("StartTime", "")
-        EndTime = bb.getString("EndTime", "")
+
 
         Droplat = bb.getString("PointLatitude", "")
         Droplang = bb.getString("PointLongitude", "")
@@ -168,7 +170,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         if (UserName != null) {
             if (UserName != "") {
-                textView.text = "Welcome  $UserName"
+                textView.text = "Welcome $UserName"
             } else {
                 textView.visibility = View.GONE
             }
@@ -177,8 +179,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
 
         lay_routeandvechile.visibility = View.VISIBLE
-        lay_back.visibility = View.INVISIBLE
         lay_durationtime.visibility = View.VISIBLE
+        lay_back.visibility = View.INVISIBLE
         lay_back.isEnabled = false
 
         txt_VehicleNumber.text = VehicleNumber
@@ -212,22 +214,20 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
                         }
                         var isBetween = EndTime!!.toInt() > StartTime!!.toInt() && timeOfDay >= StartTime!!.toInt() && timeOfDay <= EndTime!!.toInt() || EndTime!!.toInt() < StartTime!!.toInt() && timeOfDay >= StartTime!!.toInt() || timeOfDay <= EndTime!!.toInt()
-                        if (isBetween == true) {
+
+                        if (timeOfDay >= Integer.valueOf(StartTime!!) && timeOfDay < Integer.valueOf(EndTime!!)) { //checkes whether the current time is between 14:49:00 and 20:11:13.
+                            println(true)
                             try {
                                 getDirection(lat, lng, PointLatitude!!.toDouble(), PointLongitude!!.toDouble())
-
+                                getDirection_distance(lat, lng, Droplat!!.toDouble(), Droplang!!.toDouble())
                             } catch (e: java.lang.Exception) {
                                 e.printStackTrace()
                             }
-
-
                         } else {
                             timer.cancel()
                             val i = Intent(applicationContext, HolidayActivity::class.java)
                             startActivity(i)
-
                         }
-
 
                     } else if ((connec != null && (((connec.getNetworkInfo(ConnectivityManager.TYPE_WIFI).getState() === NetworkInfo.State.DISCONNECTED) || (connec.getNetworkInfo(ConnectivityManager.TYPE_MOBILE).getState() === NetworkInfo.State.DISCONNECTED))))) {
 
@@ -246,10 +246,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                         service()
                         val c = Calendar.getInstance()
                         val timeOfDay = c.get(Calendar.HOUR_OF_DAY)
-                        var isBetween = EndTime!!.toInt() > StartTime!!.toInt() && timeOfDay >= StartTime!!.toInt() && timeOfDay <= EndTime!!.toInt() || EndTime!!.toInt() < StartTime!!.toInt() && timeOfDay >= StartTime!!.toInt() || timeOfDay <= EndTime!!.toInt()
-                        if (isBetween == true) {
+
+
+                        if (timeOfDay >= Integer.valueOf(StartTime!!) && timeOfDay < Integer.valueOf(EndTime!!)) { //checkes whether the current time is between 14:49:00 and 20:11:13.
+                            println(true)
                             try {
                                 getDirection(lat, lng, PointLatitude!!.toDouble(), PointLongitude!!.toDouble())
+                                getDirection_distance(lat, lng, Droplat!!.toDouble(), Droplang!!.toDouble())
+
 
                             } catch (e: java.lang.Exception) {
                                 e.printStackTrace()
@@ -258,7 +262,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             timer.cancel()
                             val i = Intent(applicationContext, HolidayActivity::class.java)
                             startActivity(i)
-
                         }
 
 
@@ -266,28 +269,26 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
                     }
                 }
-            }, 1, 1500)
+            }, 1, 15000)
         } catch (e: Throwable) {
             e.printStackTrace()
         }
-        service()
 
-
-        var isBetween = EndTime!!.toInt() > StartTime!!.toInt() && timeOfDay >= StartTime!!.toInt() && timeOfDay <= EndTime!!.toInt() || EndTime!!.toInt() < StartTime!!.toInt() && timeOfDay >= StartTime!!.toInt() || timeOfDay <= EndTime!!.toInt()
-        if (isBetween == true) {
-
+        if (timeOfDay >= Integer.valueOf(StartTime!!) && timeOfDay < Integer.valueOf(EndTime!!)) { //checkes whether the current time is between 14:49:00 and 20:11:13.
+            println(true)
             try {
                 getDirection(lat, lng, PointLatitude!!.toDouble(), PointLongitude!!.toDouble())
+                getDirection_distance(lat, lng, Droplat!!.toDouble(), Droplang!!.toDouble())
 
             } catch (e: java.lang.Exception) {
                 e.printStackTrace()
             }
-
         } else {
             val i = Intent(applicationContext, HolidayActivity::class.java)
             startActivity(i)
-
         }
+
+
         navigation.setOnNavigationItemSelectedListener { item: MenuItem ->
             return@setOnNavigationItemSelectedListener when (item.itemId) {
                 R.id.navigation_Profile -> {
@@ -298,6 +299,14 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 R.id.navigation_Logout -> {
                     logoutdialog()
 
+                    true
+
+
+                }
+                R.id.navigation_history -> {
+                    timer.cancel()
+                    val intent = Intent(this@MapsActivity, PArentHistoryTrackingDetails::class.java)
+                    startActivity(intent)
                     true
 
 
@@ -412,7 +421,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
     }
 
-
     private fun animateCamera(@NonNull location: Location?) {
         val latLng = LatLng(lat, lng)
         googleMap!!.animateCamera(CameraUpdateFactory.newCameraPosition(getCameraPositionWithBearing(latLng)))
@@ -427,6 +435,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val Title: String = VehicleName + "_" + statuscolor + "_" + ignition + "_" + sincefrom + "_" +
                 speed + "_" + liveedate + "_" + DriverName + "_" + MobNo + "_" + loc
+
+
         val latLng = LatLng(lat, lng)
 
         if (currentLocation != null)
@@ -441,9 +451,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-
     private fun getDirection(fromLatitude: Double, fromLongitude: Double, toLatitude: Double, toLongitude: Double) {
-
+        viapoints!!.clear()
         val url: String = makeURL(fromLatitude, fromLongitude, toLatitude, toLongitude)
 
 
@@ -452,7 +461,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             drawPath(response)
         }, com.android.volley.Response.ErrorListener { error -> Log.e("VOLLEY", error.toString()) })
 
-        Log.d("STRINGREQUEST", "" + stringRequest)
+        Log.e("STRINGREQUEST", "" + stringRequest)
         stringRequest.retryPolicy = DefaultRetryPolicy(
                 500000,
                 DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
@@ -461,6 +470,24 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
+    private fun getDirection_distance(fromLatitude: Double, fromLongitude: Double, toLatitude: Double, toLongitude: Double) {
+        viapoints!!.clear()
+        val url: String = makeURLdistance(fromLatitude, fromLongitude, toLatitude, toLongitude)
+
+
+        var stringRequest = StringRequest(url, com.android.volley.Response.Listener<String>() { response ->
+
+            drawPathdistance(response)
+        }, com.android.volley.Response.ErrorListener { error -> Log.e("VOLLEY", error.toString()) })
+
+        Log.e("STRINGREDIATCNCE", "" + stringRequest)
+        stringRequest.retryPolicy = DefaultRetryPolicy(
+                500000,
+                DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
+                DefaultRetryPolicy.DEFAULT_BACKOFF_MULT)
+        VolleySingleton.getInstance().requestQueue.add(stringRequest)
+
+    }
 
     fun drawPath(result: String?) {
         if (line != null) {
@@ -475,12 +502,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         currentLocationMarker_Destination = googleMap!!.addMarker(MarkerOptions()
                 .position(LatLng(Droplat!!.toDouble(), Droplang!!.toDouble())).title(Title)
                 .draggable(false)
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_destination)))
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_allpoints)))
         val customInfoWindow = CustomInfoWindow(layoutInflater)
         googleMap!!.setInfoWindowAdapter(customInfoWindow)
         markerPlaces.add(currentLocationMarker_Destination!!.getId())
+        currentLocationMarker_Destination!!.showInfoWindow()
 
-        circle = googleMap!!.addCircle(CircleOptions().center(LatLng(lat.toDouble(), lng.toDouble())).strokeWidth(1f).radius(10000.0).strokeColor(Color.RED));
+//        circle = googleMap!!.addCircle(CircleOptions().center(LatLng(lat.toDouble(), lng.toDouble())).strokeWidth(1f).radius(10000.0).strokeColor(Color.RED));
 
         try { //Parsing json
             val json = JSONObject(result)
@@ -494,8 +522,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val durationtext = duration.getString("text")
 
 
-            tv_Distance.text = distancetext
-            tv_Duration.text = durationtext
             val overviewPolylines = routes.getJSONObject("overview_polyline")
             val encodedString = overviewPolylines.getString("points")
             val list: List<LatLng> = decodePoly(encodedString)
@@ -511,8 +537,8 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
 
     }
 
-
     fun makeURL(sourcelat: Double, sourcelog: Double, destlat: Double, destlog: Double): String {
+        viapoints!!.clear()
         val urlString = StringBuilder()
         urlString.append("https://maps.googleapis.com/maps/api/directions/json")
         urlString.append("?origin=") // from
@@ -541,12 +567,64 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         return urlString.toString()
     }
 
+    fun drawPathdistance(result: String?) {
+
+
+        try { //Parsing json
+            val json = JSONObject(result)
+            val routeArray = json.getJSONArray("routes")
+            val routes = routeArray.getJSONObject(0)
+            val legs = routes.getJSONArray("legs")
+            val steps = legs.getJSONObject(0)
+            val distance = steps.getJSONObject("distance")
+            val distancetext = distance.getString("text")
+            val duration = steps.getJSONObject("duration")
+            val durationtext = duration.getString("text")
+
+
+            tv_Distance.text = distancetext
+            tv_Duration.text = durationtext
+
+
+        } catch (e: JSONException) {
+        }
+
+
+    }
+
+    fun makeURLdistance(sourcelat: Double, sourcelog: Double, destlat: Double, destlog: Double): String {
+        val urlString = StringBuilder()
+        urlString.append("https://maps.googleapis.com/maps/api/directions/json")
+        urlString.append("?origin=") // from
+        urlString.append(java.lang.Double.toString(sourcelat))
+        urlString.append(",")
+
+
+        urlString.append(java.lang.Double.toString(sourcelog))
+
+
+        urlString.append("&destination=") // to
+        //urlString.append(Destinationlatlang)
+        urlString.append(java.lang.Double.toString(destlat))
+        urlString.append(",")
+        urlString.append(java.lang.Double.toString(destlog))
+
+        urlString.append("&key=AIzaSyCL6a5z3GH088gmKurSnhSMzofVyuLmlvY")
+        urlString.append("&sensor=false&mode=driving&alternatives=true")
+
+
+
+        return urlString.toString()
+    }
+
     override fun onStop() {
+        timer.cancel()
         super.onStop()
         if (fusedLocationProviderClient != null) fusedLocationProviderClient!!.removeLocationUpdates(mLocationCallback)
     }
 
     override fun onResume() {
+
         super.onResume()
         if (isGooglePlayServicesAvailable()) {
             fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(this)
@@ -555,6 +633,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     override fun onDestroy() {
+        timer.cancel()
         super.onDestroy()
         fusedLocationProviderClient = null
         // googleMap = null
@@ -566,12 +645,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         val yesBtn = dialogs.findViewById(R.id.lay_logout_s) as RelativeLayout
         val noBtn = dialogs.findViewById(R.id.lay_cancel) as RelativeLayout
         yesBtn.setOnClickListener {
-
+            wayPoints = ""
+            viapoints!!.clear()
             timer.cancel()
+            googleMap!!.clear()
             val prefs = getSharedPreferences(ExceptionReportFragment.MY_PREFS_NAME, Context.MODE_PRIVATE)
             val edit = prefs.edit()
             edit.clear()
-            googleMap!!.clear()
             // currentLocationMarker!!.position == null
             val a = Intent(applicationContext, SplashScreen::class.java)
             a.addCategory(Intent.CATEGORY_HOME)
@@ -604,13 +684,12 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 })
                 .setNegativeButton("No", object : DialogInterface.OnClickListener {
                     override fun onClick(dialog: DialogInterface, id: Int) {
-                        dialog.cancel()
+                        statusCheck()
                     }
                 })
         val alert = builder.create()
         alert.show()
     }
-
 
     object MarkerAnimation {
         var isMarkerRotating = false
@@ -637,7 +716,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     t = elapsed / durationInMs
                     v = interpolator.getInterpolation(t)
 
-                    // googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(CameraPosition.Builder().target(finalPosition).zoom(16f).build()))
+                    googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(CameraPosition.Builder().target(finalPosition).zoom(16f).build()))
                     // Repeat till progress is complete.
                     if (startPosition.equals(finalPosition)) {
                         marker.isVisible = true
@@ -784,21 +863,23 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             googleMap!!.setInfoWindowAdapter(customInfoWindow)
 
 
-                            currentLocationMarker_Source = googleMap!!.addMarker(MarkerOptions()
-                                    .position(LatLng(pointt.latitude.toDouble(), pointt.longitude.toDouble())).title(Title)
-                                    .snippet(VehicleName)
-                                    .draggable(false)
-                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_allpoints)))
+//                            currentLocationMarker_Source = googleMap!!.addMarker(MarkerOptions()
+//                                    .position(LatLng(pointt.latitude.toDouble(), pointt.longitude.toDouble())).title(Title)
+//                                    .snippet(VehicleName)
+//                                    .draggable(false)
+//                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_allpoints)))
 
 
-                            if (Droplat!!.equals( viapoints!!.get(i))){
-                                currentLocationMarker_Source!!.remove()
-                            }
-                            markerPlaces.add(currentLocationMarker_Source!!.getId())
+//                            if (Droplat!!.equals(viapoints!!.get(i))) {
+//                                currentLocationMarker_Source!!.remove()
+//                            }
+//                            markerPlaces.add(currentLocationMarker_Source!!.getId())
                             wayPoints += pointt.latitude + "," + pointt.longitude + "|";
                             try {
                                 PointLatitude = viapoints!!.get(i - 1).latitude
                                 PointLongitude = viapoints!!.get(i - 1).longitude
+
+
                             } catch (e: JSONException) {
                                 e.printStackTrace()
                             }
@@ -808,10 +889,18 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                             viapoints_latlangs!!.add(wp1)
 
 
-
-                            Lalangs = currentLocationMarker_Source!!.position
+//                            Lalangs = currentLocationMarker_Source!!.position
 
                         }
+                        try {
+                            googleMap!!.addMarker(MarkerOptions()
+                                    .position(LatLng(viapoints!!.get(viapoints!!.size - 1).latitude!!.toDouble(), viapoints!!.get(viapoints!!.size - 1).longitude!!.toDouble())).title(PointName)
+                                    .draggable(false)
+                                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.ic_destination)))
+                        } catch (e: Exception) {
+                            e.printStackTrace()
+                        }
+
                     }
 
                 } else {
@@ -833,7 +922,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         }
         VolleySingleton.getInstance().requestQueue.add(stringRequest)
     }
-
 
     class CustomInfoWindow(inflater: LayoutInflater) : GoogleMap.InfoWindowAdapter {
         internal var inflater: LayoutInflater? = null

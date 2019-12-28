@@ -4,15 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
-    android:background="@drawable/background_login"
+    android:background="@color/colorPrimary"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
     <LinearLayout
         android:id="@+id/ll_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp"
         android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/kite_eye" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,45 +29,32 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_10sdp"
                 android:gravity="center"
-                android:text="Integrated Vehicle Tracking System"
+                android:text="School Bus Tracking System"
                 android:textColor="@color/textcolor_white"
-                android:textSize="@dimen/login_header"
-                android:textStyle="normal"
-                android:typeface="normal" />
+                android:textSize="@dimen/_16sdp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:text="(IVTS)"
-                android:textColor="@color/textcolor_white"
-                android:textSize="@dimen/login_header"
-                android:textStyle="normal"
-                android:typeface="normal" />
         </LinearLayout>
 
 
         <LinearLayout
-            android:layout_width="fill_parent"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
 
             <EditText
                 android:id="@+id/et_mobilenumber"
-                android:layout_width="351dp"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/_45sdp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginTop="@dimen/_4sdp"
-                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_margin="@dimen/_12sdp"
                 android:background="@drawable/submit"
-                android:hint="Enter Mobile Number"
+                android:hint="Enter Registered Mobile Number"
                 android:inputType="number"
                 android:maxLength="10"
-                android:paddingLeft="@dimen/_12sdp"
+                android:padding="@dimen/_12sdp"
                 android:singleLine="true"
                 android:textColor="@color/textcolor_white"
                 android:textColorHint="@color/hintcolor"
@@ -73,21 +66,19 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/_20sdp"
-            android:orientation="horizontal">
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp">
 
             <CheckBox
                 android:id="@+id/savecredentials"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:buttonTint="@color/textcolor_white" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:buttonTint="@color/gray"
                 android:text="@string/Savecredentials"
-                android:textColor="@color/textcolor_white"
-                android:textSize="@dimen/_14sdp" />
+                android:textColor="@color/gray"
+                android:textSize="@dimen/_10sdp" />
 
         </LinearLayout>
 

@@ -15,19 +15,17 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Integrated Vehicle Tracking System"
+        android:text="School Bus Tracking System"
         android:textColor="@color/textcolor_color"
-        android:textSize="14dp"
-        app:fontFamily="@font/alice" />
+        android:textSize="14dp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="IVTS"
+        android:text="SBTS"
         android:textColor="@color/textcolor_color"
         android:textSize="14dp"
-        android:textStyle="bold|normal"
-        app:fontFamily="@font/alice" />
+        android:textStyle="bold|normal" />
 
 
 </LinearLayout>

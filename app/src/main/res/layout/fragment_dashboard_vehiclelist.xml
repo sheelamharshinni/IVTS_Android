@@ -28,7 +28,7 @@
             android:background="@color/colorPrimary"
             android:gravity="center"
             android:text="Back"
-            android:textColor="@color/textcolor_color"
+            android:textColor="@color/textcolor_white"
             android:textSize="@dimen/_15sdp"
             android:typeface="serif" />
 

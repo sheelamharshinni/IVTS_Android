@@ -23,7 +23,13 @@ import com.github.mikephil.charting.components.YAxis;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.formatter.LargeValueFormatter;
+import com.github.mikephil.charting.formatter.ValueFormatter;
+import com.github.mikephil.charting.formatter.XAxisValueFormatter;
+import com.github.mikephil.charting.formatter.YAxisValueFormatter;
+import com.github.mikephil.charting.utils.ColorTemplate;
+import com.github.mikephil.charting.utils.ViewPortHandler;
 import com.tecdatum.Tracking.School.R;
 import com.tecdatum.Tracking.School.newConstants.Url_new;
 import com.tecdatum.Tracking.School.volley.VolleySingleton;
@@ -57,7 +63,7 @@ public class Dashboard extends Fragment {
     private String Homedashboard = Url_new.Homedashboard;
     String ParentMobile;
     String Srun_bus, Sstop_bus, Sidle_bus, Suf_bus;
-    public static ArrayList<String> y_axis_bar = new ArrayList<String>();
+    public static ArrayList<Integer> y_axis_bar = new ArrayList<Integer>();
     private OnFragmentInteractionListener mListener;
 
     public Dashboard() {
@@ -297,8 +303,7 @@ public class Dashboard extends Fragment {
         void onFragmentInteraction(Uri uri);
     }
 
-
-    private void setBARCHART_RUNdata_bus(int mnum1_cars, int mnum2_cars, int mnum3_cars, int mnum4_cars) {
+    private void setBARCHART_RUNdata_bus(int num1, int num2, int num3, int num4) {
         y_axis_bar.clear();
         ArrayList<String> labels = new ArrayList<>();
         labels.add("");//
@@ -306,39 +311,67 @@ public class Dashboard extends Fragment {
         labels.add("");
         labels.add("");//
 
-        y_axis_bar.add(String.valueOf(mnum1_cars));
-        y_axis_bar.add(String.valueOf(mnum2_cars));
-        y_axis_bar.add(String.valueOf(mnum3_cars));
-        y_axis_bar.add(String.valueOf(mnum4_cars));
+
+        y_axis_bar.add(Integer.parseInt(String.valueOf(num1)));
+        y_axis_bar.add(Integer.parseInt(String.valueOf(num2)));
+        y_axis_bar.add(Integer.parseInt(String.valueOf(num3)));
+        y_axis_bar.add(Integer.parseInt(String.valueOf(num4)));
 
 
         ArrayList<BarEntry> entries = new ArrayList<>();
-        entries.add(new BarEntry((int) Float.parseFloat(y_axis_bar.get(0).replace("", "")), 0));
-        entries.add(new BarEntry((int) Float.parseFloat(y_axis_bar.get(1).replace("", "")), 1));
-        entries.add(new BarEntry((int) Float.parseFloat(y_axis_bar.get(2).replace("", "")), 2));
-        entries.add(new BarEntry((int) Float.parseFloat(y_axis_bar.get(3).replace("", "")), 3));
+        entries.add(new BarEntry(y_axis_bar.get(0), 0));
+        entries.add(new BarEntry(y_axis_bar.get(1), 1));
+        entries.add(new BarEntry(y_axis_bar.get(2), 2));
+        entries.add(new BarEntry(y_axis_bar.get(3), 3));
 
-        BarDataSet dataSet = new BarDataSet(entries, "Bus");
+
+        BarDataSet dataSet = new BarDataSet(entries, "");
+        dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
         dataSet.setColors(new int[]{R.color.green, R.color.red, R.color.yellow, R.color.gray}, getActivity());
+        // dataSet.setColor(Color.argb(155, 0, 0,0));
         BarData data = new BarData(labels, dataSet);
-
+        data.setValueFormatter(new MyValueFormatter());
         mChart_bar_bus.setVisibleXRange(1, 12);
 
         XAxis xAxis = mChart_bar_bus.getXAxis();
-        xAxis.setLabelsToSkip(7);
+        xAxis.setLabelsToSkip(3);
+        // xAxis.setLabelRotationAngle(-90);
         xAxis.setDrawGridLines(false);
         xAxis.setPosition(XAxis.XAxisPosition.BOTTOM_INSIDE);
 
         //Y-axis
-//        YAxis leftAxis = mChart_bar_bus.getAxisLeft();
-//        leftAxis.setValueFormatter(new LargeValueFormatter());
-//        leftAxis.setDrawGridLines(true);
-//        leftAxis.setSpaceTop(35f);
+        YAxis leftAxis = mChart_bar_bus.getAxisLeft();
+        leftAxis.setValueFormatter(new LargeValueFormatter());
+        leftAxis.setDrawGridLines(true);
+        leftAxis.setSpaceTop(35f);
+
+
+        leftAxis.setValueFormatter(new YAxisValueFormatter() {
+            @Override
+            public String getFormattedValue(float value, YAxis yAxis) {
+                return String.valueOf((int) value);
+            }
+        });
+
+        xAxis.setValueFormatter(new XAxisValueFormatter() {
+            @Override
+            public String getXValue(String original, int index, ViewPortHandler viewPortHandler) {
+                return String.valueOf(index);
+            }
+        });
 
         mChart_bar_bus.getAxisRight().setEnabled(false);
         mChart_bar_bus.setData(data);
         mChart_bar_bus.setDescription("Bar Chart");
         mChart_bar_bus.invalidate();
 
+
     }
+    public class MyValueFormatter implements ValueFormatter {
+        @Override
+        public String getFormattedValue(float value, Entry entry, int dataSetIndex, ViewPortHandler viewPortHandler) {
+            return Math.round(value) + "";
+        }
+    }
+
 }

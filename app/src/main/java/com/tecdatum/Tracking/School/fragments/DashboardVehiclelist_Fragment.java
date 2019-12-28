@@ -1628,7 +1628,7 @@ public class DashboardVehiclelist_Fragment extends Fragment {
 
 
                 if (position == currentPosition) {
-                    ll_vehiclesadapter.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.backrunning));
+//                    ll_vehiclesadapter.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.backrunning));
                     linearLayout.setVisibility(expanded ? View.VISIBLE : View.GONE);
                     expand.setVisibility(View.GONE);
                     collapse.setVisibility(View.VISIBLE);
@@ -1872,13 +1872,13 @@ public class DashboardVehiclelist_Fragment extends Fragment {
                         expand.setVisibility(View.VISIBLE);
                         collapse.setVisibility(View.GONE);
                         tv_more.setVisibility(View.GONE);
-                        ll_vehiclesadapter.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.backdashboard));
+//                        ll_vehiclesadapter.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.backdashboard));
                     }
                 } else {
                     expand.setVisibility(View.VISIBLE);
                     collapse.setVisibility(View.GONE);
                     tv_more.setVisibility(View.GONE);
-                    ll_vehiclesadapter.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.backdashboard));
+//                    ll_vehiclesadapter.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), R.drawable.backdashboard));
                 }
 
             }
@@ -2031,7 +2031,7 @@ public class DashboardVehiclelist_Fragment extends Fragment {
                                 fm.setText(year
                                         + "-" + (monthNumber + 1) + "-" + calendarSelected.get(Calendar.DAY_OF_MONTH)
                                         + " " + hour24 + ":" + min
-                                        + ":" + sec);
+                                       );
                             }
 
                             @Override
@@ -2057,7 +2057,7 @@ public class DashboardVehiclelist_Fragment extends Fragment {
                                 toT.setText(year
                                         + "-" + (monthNumber + 1) + "-" + calendarSelected.get(Calendar.DAY_OF_MONTH)
                                         + " " + hour24 + ":" + min
-                                        + ":" + sec);
+                                        );
                             }
 
                             @Override
@@ -2093,17 +2093,9 @@ public class DashboardVehiclelist_Fragment extends Fragment {
 
                                                         Log.v(TAG, "The choosen one " + date_fm.getTime());
 
-                                                        android.icu.text.DateFormat df = null;
-                                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                                                            df = new android.icu.text.SimpleDateFormat("yyyy-MM-dd hh:mm");
-                                                        }
 
-                                                        fm.setText("");
-                                                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-                                                            fm.setText("" + df.format(date_fm.getTime()));
-                                                        }
-
-                                                        Log.v(TAG, "The From Date " + df.format(date_fm.getTime()));
+                                                        SimpleDateFormat      df = new SimpleDateFormat("yyyy-MM-dd hh:mm");
+                                                        fm.setText("" + df.format(date_fm.getTime()));
 
                                                     }
                                                 }, currentDate.get(Calendar.HOUR_OF_DAY), currentDate.get(Calendar.MINUTE), false).show();
@@ -2138,7 +2130,7 @@ public class DashboardVehiclelist_Fragment extends Fragment {
 
                                         Log.v(TAG, "The choosen one " + date_to.getTime());
 
-                                        android.icu.text.DateFormat df = new android.icu.text.SimpleDateFormat("yyyy-MM-dd hh:mm");
+                                        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd hh:mm");
 
                                         toT.setText("");
                                         toT.setText("" + df.format(date_to.getTime()));

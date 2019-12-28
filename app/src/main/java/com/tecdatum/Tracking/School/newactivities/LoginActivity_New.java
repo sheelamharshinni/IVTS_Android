@@ -90,10 +90,10 @@ public class LoginActivity_New extends AppCompatActivity {
 
 
                     } else {
-                        et_mobilenumber.setError("Mobile Number Should be 10 digits");
+                        et_mobilenumber.setError("Registered Mobile Number Should be 10 digits");
                     }
                 } else {
-                    et_mobilenumber.setError("Please Enter Mobile Number");
+                    et_mobilenumber.setError("Please Enter Registered Mobile Number");
 
                 }
 
@@ -298,23 +298,21 @@ public class LoginActivity_New extends AppCompatActivity {
                     edit.putString("Message", Message);
                     edit.putString("Reason", Reason);
                     edit.commit();
-                    Intent i = new Intent(getApplicationContext(), HolidayActivity.class);
+                    Intent i = new Intent(getApplicationContext(), HolidatStatusActivity.class);
                     startActivity(i);
+
+
+
                 } else {
+                    if (Datetime >= Integer.valueOf(StartTime) && Datetime < Integer.valueOf(EndTime)) { //checkes whether the current time is between 14:49:00 and 20:11:13.
+                            Intent i = new Intent(getApplicationContext(), MapsActivity.class);
+                            startActivity(i);
 
-
-                    boolean isBetween = Integer.parseInt(EndTime) > Integer.parseInt(StartTime) && Datetime >= Integer.parseInt(StartTime) && Datetime <= Integer.parseInt(EndTime) || Integer.parseInt(EndTime) < Integer.parseInt(StartTime) && Datetime >= Integer.parseInt(StartTime) || Datetime <= Integer.parseInt(EndTime);
-                    if (isBetween == true) {
-                        Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                        startActivity(i);
                     } else {
+
                         Intent i = new Intent(getApplicationContext(), HolidayActivity.class);
                         startActivity(i);
                     }
-
-
-                    Intent i = new Intent(getApplicationContext(), MapsActivity.class);
-                    startActivity(i);
                 }
 
 

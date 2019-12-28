@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center"
         android:gravity="bottom|center"
-        android:text=" a tecdatum product"
+        android:text=" © 2019 Tecdatum Infoservices Pvt. Ltd. All rights reserved."
         android:textColor="#fff"
         android:textSize="12dp"
         android:textStyle="normal" />
@@ -27,15 +27,16 @@
         android:text="Copyright © 2019"
         android:textColor="#fff"
         android:textSize="8dp"
+        android:visibility="gone"
         android:textStyle="normal" />
 
     <TextView
         android:id="@+id/tv_VersionCode"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
         android:gravity="bottom|center"
-        android:text="version"
         android:textColor="#fff"
         android:textSize="8dp"
         android:textStyle="normal" />
