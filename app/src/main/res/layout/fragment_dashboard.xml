@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <include
@@ -76,7 +76,6 @@
                                 <LinearLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-
                                     android:gravity="center"
                                     android:orientation="vertical"
                                     android:padding="5dp">
@@ -301,6 +300,7 @@
                         android:layout_height="300dp"
                         android:layout_gravity="center"
                         android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
                         android:background="@drawable/edittext_baground"
                         android:padding="10dp" />
 

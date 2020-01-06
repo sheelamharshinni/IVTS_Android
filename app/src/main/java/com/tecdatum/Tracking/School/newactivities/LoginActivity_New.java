@@ -230,7 +230,7 @@ public class LoginActivity_New extends AppCompatActivity {
 
 
                     } else {
-                        Intent i = new Intent(getApplicationContext(), HomeActivity.class);
+                        Intent i = new Intent(getApplicationContext(), HomeActivity_new.class);
                         startActivity(i);
                     }
 

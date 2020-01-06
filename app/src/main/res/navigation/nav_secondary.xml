@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_secondary"
+    app:startDestination="@id/MainBottomFragment">
+
+
+    <fragment
+        android:id="@+id/MainBottomFragment"
+        android:name="com.tecdatum.Tracking.School.fragments.Dashboard"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_MainBottomFragment_to_DashBoardVehicleFragment"
+            app:destination="@id/DashBoardVehicleFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DashBoardVehicleFragment"
+        android:name="com.tecdatum.Tracking.School.fragments.DashboardVehicleList"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_dashboard_vehiclelist"/>
+
+
+
+
+
+</navigation>

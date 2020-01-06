@@ -245,9 +245,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:gravity="center"
-                android:orientation="horizontal"
-
-                >
+                android:orientation="horizontal">
 
 
                 <RadioGroup
@@ -315,6 +313,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="500dp" />
 
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/livetracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:visibility="gone"/>
+
 
                 <ImageView
                     android:id="@+id/Track_info"
@@ -381,6 +385,7 @@
                     android:layout_height="15dp" />
             </LinearLayout>
         </LinearLayout>
+
         <!--      </ScrollView>-->
     </LinearLayout>
 

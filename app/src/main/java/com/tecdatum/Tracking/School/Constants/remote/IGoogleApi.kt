@@ -26,9 +26,6 @@ interface IGoogleApi {
                       @Query("destination") destination: String,
                       @Query("key") apiKey: String): Single<Result>
 
-    @GET("api/directions/json?key=AIzaSyCL6a5z3GH088gmKurSnhSMzofVyuLmlvY")
-    fun distanceDuration(@Query("units")  units:String, @Query("origin")  origin:String, @Query("destination")  destination:String, @Query("mode")  mode:String):Call<Example>?
-
 
 
 

@@ -4,59 +4,128 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_gravity="center_horizontal"
-    android:background="@color/textcolor_white"
-    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
 
-    android:foregroundGravity="center"
-    tools:openDrawer="start">
-
-    <include
-        layout="@layout/app_bar_main_new"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        android:fitsSystemWindows="true"
-        app:headerLayout="@layout/nav_header_main_new"
-        app:menu="@menu/activity_main_drawer_new"
-        app:theme="@style/NavigationDrawerStyle">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <include layout="@layout/toolbar_layout" />
+        <fragment
+            android:id="@+id/nav_host_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:orientation="vertical">
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
 
-            <TextView
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/abc_action_bar_default_height_material"
+        android:fitsSystemWindows="true"
+        tools:ignore="PrivateResource">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/textcolor_white"
+                android:scaleType="fitXY" />
+
+            <ScrollView
+                android:id="@+id/scrollview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|center"
-                android:gravity="bottom|center"
-                android:text=" © 2019 Tecdatum Infoservices Pvt. Ltd. All rights reserved."
-                android:textColor="#374176"
-                android:textSize="@dimen/_10sdp"
-                android:textStyle="normal" />
+                android:fillViewport="true">
 
-            <TextView
-                android:id="@+id/tv_version"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center"
-                android:gravity="bottom"
-                android:text=""
-                android:textColor="@color/textcolor_color"
-                android:textSize="@dimen/_12sdp" />
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="@string/title_data"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray" />
+                    <LinearLayout
+                        android:id="@+id/lay_contact"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            app:srcCompat="@drawable/ic_local_phone_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="@string/contactus"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/gray" />
+
+                    <LinearLayout
+                        android:id="@+id/lay_logout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            app:srcCompat="@drawable/ic_power_settings_new_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:text="@string/logout"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/_10sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+        <include layout="@layout/footer" />
     </com.google.android.material.navigation.NavigationView>
-
-    <include layout="@layout/footer" />
-
 
 </androidx.drawerlayout.widget.DrawerLayout>

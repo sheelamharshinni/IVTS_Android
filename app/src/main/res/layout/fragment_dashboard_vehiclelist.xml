@@ -30,6 +30,7 @@
             android:text="Back"
             android:textColor="@color/textcolor_white"
             android:textSize="@dimen/_15sdp"
+            android:visibility="gone"
             android:typeface="serif" />
 
 

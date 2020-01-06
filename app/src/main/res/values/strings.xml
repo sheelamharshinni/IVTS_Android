@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">IVTS</string>
+    <string name="app_name">SBTS</string>
     <string name="t1">Stop Time \nmore than \n4 hrs</string>
     <string name="t2">Movement\n8AM to 2PM</string>
     <string name="t3">Movement\n2PM to 10PM</string>
@@ -35,9 +35,15 @@
     <string name="location_content">This app wants to change your device settings use GPS,Wi-Fi and cell networks for your location</string>
     <string name="online_driver">Online</string>
     <string name="offline">Offline</string>
+    <string name="nodata">No Data</string>
     <string name="logout_message">Are you sure to logout?</string>
     <string name="logout">Logout</string>
     <string name="cancel">Cancel</string>
+    <string name="contactus">Contact Us</string>
     <string name="Savecredentials">Save Credentials</string>
+    <string name="title_data">School Bus Tracking System (SBTS)</string>
     <string name="edit_parentdetails">Update Parent Profile</string>
+    <string name="location">Location</string>
+    <string name="lastupdated">Last Updated Date &amp; Time</string>
+    <string name="deviderdots">:</string>
 </resources>

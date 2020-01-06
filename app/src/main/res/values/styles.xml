@@ -52,7 +52,13 @@
         <item name="cardPreventCornerOverlap">true</item>
         <item name="cardUseCompatPadding">true</item>
     </style>
-
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/textcolor_white</item>
+        <item name="android:textStyle">normal</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
 
     <color name="winBackground">#98cb4a</color>
     <color name="background">#f76d3c</color>

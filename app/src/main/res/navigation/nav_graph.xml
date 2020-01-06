@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/defaultFragment">
+
+    <fragment
+        android:id="@+id/defaultFragment"
+        android:name="com.tecdatum.Tracking.School.fragments.HomeFragment"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_home"/>
+
+    <fragment
+        android:id="@+id/contactusFragment"
+        android:name="com.tecdatum.Tracking.School.fragments.ContactUS"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_contact_u"/>
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.tecdatum.Tracking.School.fragments.DashboardVehicleList"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_dashboard_vehiclelist"/>
+
+    <fragment
+        android:id="@+id/navigation_report"
+        android:name="com.tecdatum.Tracking.School.fragments.MonthDayReport_Fragment"
+        android:label="Default Fragment"
+        tools:layout="@layout/after_activity_month_day_report"/>
+    <fragment
+        android:id="@+id/navigation_administartion"
+        android:name="com.tecdatum.Tracking.School.fragments.Admin_Fragment"
+        android:label="Default Fragment"
+        tools:layout="@layout/fragment_admin_"/>
+
+</navigation>

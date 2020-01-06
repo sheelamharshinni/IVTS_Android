@@ -12,7 +12,9 @@
 
     <color name="hintcolor">#B4A3A6A3</color>
     <color name="textcolor_white">#ffffff</color>
+    <color name="colorViewBackGround">#e6e6e6</color>
     <color name="textcolor_color">#0f75bd</color>
+    <color name="colorTitle">#333333</color>
 
     <color name="textcolor_black">#000000</color>
 </resources>

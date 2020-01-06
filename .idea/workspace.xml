@@ -13,7 +13,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AvailableLibraryUpdateStorage">
@@ -30,7 +30,7 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="HMWGLNRWGYAAD6IB" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_29" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -47,25 +47,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="HyderabadTrack" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="HyderabadTrack" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="HyderabadTrack" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="HyderabadTrack" type="f1a62948:ProjectNode" />
-                <item name="app" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="android" type="c8890929:TasksNode$1" />
+                <item name="IVTS_Android" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -79,86 +61,86 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="498" selection-start-line="498" selection-end-line="498" />
+            <state relative-caret-position="2329">
+              <caret line="200" column="19" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
               <folding>
-                <element signature="e#38#2647#0" expanded="true" />
-                <element signature="e#4935#5386#0" />
+                <element signature="e#15611#19232#0" />
+                <element signature="e#19349#19760#0" />
+                <element signature="e#21963#22664#0" />
+                <element signature="e#24701#25579#0" />
+                <element signature="e#25623#26741#0" />
+                <element signature="e#26848#27614#0" />
+                <element signature="e#28236#29328#0" />
+                <element signature="e#30086#32642#0" />
+                <element signature="e#32702#33729#0" />
+                <element signature="e#33802#39647#0" />
+                <element signature="e#39732#41671#0" />
+                <element signature="e#41749#45939#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar_layout.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
-              <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
-            </state>
-          </provider>
-          <provider editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/edittext_duration.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="26" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner_map.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/Constants/remote/IGoogleApi.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="29" column="173" selection-start-line="29" selection-start-column="173" selection-end-line="29" selection-end-column="173" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+            <state relative-caret-position="208">
+              <caret line="637" column="35" lean-forward="true" selection-start-line="637" selection-start-column="35" selection-end-line="637" selection-end-column="35" />
               <folding>
-                <element signature="e#2300#3427#0" />
-                <element signature="e#2947#2962#0" expanded="true" />
-                <element signature="e#3206#3221#0" expanded="true" />
-                <element signature="e#3268#3283#0" expanded="true" />
-                <element signature="e#3381#3396#0" expanded="true" />
-                <element signature="e#3976#3990#0" expanded="true" />
-                <element signature="e#4038#4052#0" expanded="true" />
-                <element signature="e#4445#4460#0" expanded="true" />
-                <element signature="e#4508#4523#0" expanded="true" />
-                <element signature="e#4816#4830#0" expanded="true" />
-                <element signature="e#4878#4892#0" expanded="true" />
+                <element signature="e#6759#7374#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_livetracking.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="52" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="52" />
             </state>
           </provider>
           <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehicleList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+            <state relative-caret-position="3944">
+              <caret line="295" column="86" selection-start-line="295" selection-start-column="86" selection-end-line="295" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/QvVehiclesList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1785">
+              <caret line="181" selection-start-line="181" selection-end-line="181" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LiveStatus.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="33" />
+              <folding>
+                <element signature="e#29935#31695#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newConstants/Url_new.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -170,44 +152,44 @@
       <list>
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
-        <option value="layoutResourceFile_vertical" />
         <option value="Kotlin File" />
+        <option value="layoutResourceFile_vertical" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>status</find>
-      <find>dura</find>
-      <find>Retrofit</find>
-      <find>val retrofit2 = Retrofit.Builder()</find>
-      <find>apiInterface = retrofit2.create&lt;IGoogleApi&gt;(IGoogleApi::class.java)</find>
+      <find>firstTimeFlag</find>
+      <find>buildAlertMessageNoGps</find>
+      <find>getpickpoints_CCTV</find>
       <find>PointLatitude</find>
+      <find>mLocationCallback</find>
+      <find>apiInterface</find>
+      <find>direction</find>
+      <find>vehicletype</find>
+      <find>VehicleId</find>
+      <find>service</find>
+      <find>PointLongitude</find>
+      <find>decodePoly</find>
+      <find>startCurrentLocationUpdates</find>
+      <find>map</find>
+      <find>url Speed</find>
+      <find>oncon</find>
+      <find>currentLocation</find>
+      <find>currentLocationMarker</find>
+      <find>currentLocationMarker_Destination</find>
+      <find>PointName</find>
+      <find>markerPlaces1</find>
+      <find>cb_pointsm</find>
+      <find>Holiday</find>
+      <find>hideCCtvs</find>
+      <find>PickRoute</find>
+      <find>DropRoute</find>
+      <find>hero</find>
+      <find>make</find>
+      <find>DashboardVehicleList1</find>
       <find>getDirection</find>
-      <find>data</find>
-      <find>textView</find>
-      <find>points</find>
-      <find>getpo</find>
-      <find>get</find>
-      <find>getdi</find>
-      <find>logo</find>
-      <find>viapoints</find>
-      <find>wayPoints</find>
-      <find>url</find>
-      <find>error_message</find>
-      <find>VersionCode</find>
-      <find>Dura</find>
-      <find>makeURLdistance</find>
-      <find>getDirection_distance</find>
-      <find>serv</find>
-      <find>Dis</find>
-      <find>Distance</find>
-      <find>datagf</find>
-      <find>1500</find>
-      <find>150</find>
-      <find>15000</find>
-      <find>showInfoWindow</find>
     </findStrings>
     <replaceStrings>
       <replace>#004D92</replace>
@@ -229,7 +211,6 @@
       <replace>R.drawable.bus_inrepair</replace>
       <replace>@color/textcolor_color</replace>
       <replace>com.tecdatum.Tracking.IVTS_Dashboard</replace>
-      <replace>getVehicletype</replace>
       <replace>getVehicleStatus</replace>
       <replace>getVehicle_Id</replace>
       <replace>getMobileNo</replace>
@@ -240,6 +221,7 @@
       <replace>getApplicationContext</replace>
       <replace>editdetails</replace>
       <replace>android:layout_width=&quot;100dp&quot;</replace>
+      <replace>getVehicletype</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Bitbuckit\HyderabadTrack_11-28_11_42-2019\HyderabadTrack_11-28-2019\HyderabadTrack\MPChartLib\src\com\github\mikephil\charting</dir>
@@ -258,65 +240,64 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/Parent_Home.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/ParentRegistrationActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/CustomDatePicker.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/CustomDateTimePicker.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/DatePickerReports.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/Monthdayreportitems.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/Spinneritems.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/MyApplication.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/MyPreferenceManager.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/VolleySingleton.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/LatLngInterpolator.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/Edit_ParentDetails.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/MonthDayReport_Fragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/IdleReportFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/StoppageReportFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/utils/WayPointsUtils.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/LoginActivity_New.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newConstants/Url_new.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/SpeedReportFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/SplashScreen.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard_vehiclelist.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/menu/navigation_new_parent.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_history_black_24dp.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_holiday.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/ss.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/ss.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_holidat_status.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HolidatStatusActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login__new.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/footer.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main_new.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/footer1.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main_new.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_layout_heroes.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehiclelist_Fragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/Dashboard.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HolidayActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Leg.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/PArentHistoryTrackingDetails.kt" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/LoginActivity_New.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Distance.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/datamodelclasses/VehicleListDataModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_layout_vehiclelist.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/datamodelclasses/DashBoardVehicleListdataModel.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/VehicleListFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/DashboardvehicleAdapter.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/Constants/remote/IGoogleApi.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/drawable/edittext_duration.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/toolbar_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/ViewPagerAdapter.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehiclelist_Fragmenttesting.kt" />
+        <option value="$USER_HOME$/Documents/Received Files/activity_main [2].xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/ProfileFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/SettingsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/ViewPagerAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/ViewPagerAdapter1.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/HomeFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/HomeFragmentNew.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/ProfileFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/SettingsFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/ViewPagerAdapterNew.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home_new.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_layout_heroes.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/navigation/nav_secondary.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehiclelist_Fragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/Dashboard.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/frament_history_tracking.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehicleList.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LiveStatus.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LiveStatus.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/HistoryTrackingFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/HistoryTrackingFragment.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/HistoryTrackingFragment1.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LiveStatus1.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_livestatus_info.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/ic_tab.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/tab_background_selected.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/drawable/tab_background.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_layout_adapter.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_livetracking.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehicleList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/QvVehiclesList.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="width" value="1292" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -340,44 +321,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView">
-        <subPane>
-          <expand>
-            <path>
-              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="School" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-            </path>
-            <path>
-              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="res" type="d4f16f75:AndroidResFolderNode" />
-              <item name="drawable" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -414,6 +357,45 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+            </path>
+            <path>
+              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="School" type="cbb59c9e:AndroidPsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="School" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="IVTS_Android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -432,7 +414,7 @@
     <property name="device.picker.selection" value="ePanchyatRaj" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Dependencies" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
@@ -452,22 +434,25 @@
       <recent name="com.tecdatum.Tracking.IVTS_Dashboard.fragments" />
       <recent name="com.tecdatum.Tracking.IVTS_Dashboard.IPMS.Srikakulam" />
     </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.tecdatum.Tracking.School.adapter" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tecdatum.Tracking.School.adapter" />
       <recent name="com.tecdatum.Tracking.IVTS_Dashboard.newConstants" />
       <recent name="com.tecdatum.Tracking.IVTS_Dashboard.utils" />
       <recent name="com.tecdatum.Tracking.IVTS_Dashboard.newactivities" />
       <recent name="com.tecdatum.Tracking.IVTS_Dashboard.DateTime" />
-      <recent name="com.tecdatum.Tracking.IVTS_Dashboard.newhelpers" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\res\drawable" />
-      <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\java\com\tecdatum\Tracking\School\volley" />
-      <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\java\com\tecdatum\Tracking\School\DateTime" />
-      <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\java\com\tecdatum\Tracking\School\newactivities" />
+      <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\java\com\tecdatum\Tracking\School\fragments" />
       <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\res\layout" />
+      <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\java\com\tecdatum\Tracking\School\viewpager" />
+      <recent name="D:\Bitbuckit\IVTS_Android\app\src\main\res\navigation" />
     </key>
     <key name="android.template.parentActivityClass">
       <recent name="" />
@@ -660,7 +645,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.7585034" />
       <window_info anchor="bottom" id="Build" order="7" sideWeight="0.49924356" weight="0.58843535" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49924356" weight="0.7397959" />
-      <window_info anchor="bottom" id="Android Profiler" order="9" weight="0.3282313" />
+      <window_info anchor="bottom" id="Android Profiler" order="9" show_stripe_button="false" weight="0.3282313" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.18305598" side_tool="true" weight="0.5102041" />
       <window_info anchor="bottom" x="23" y="278" width="1322" height="419" id="Logcat" order="11" sideWeight="0.816944" weight="0.72789115" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
@@ -669,7 +654,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info active="true" anchor="right" id="Preview" order="4" visible="true" weight="0.25718608" />
+      <window_info anchor="right" id="Preview" order="4" weight="0.2647504" />
       <window_info anchor="right" id="Gradle" order="5" weight="0.32980332" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -688,330 +673,442 @@
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehicleList.kt</url>
+          <line>412</line>
+          <properties />
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt</url>
+          <line>141</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt</url>
+          <line>142</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt</url>
+          <line>143</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt</url>
+          <line>139</line>
+          <properties />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>303</line>
+          <properties />
+          <option name="timeStamp" value="148" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>306</line>
+          <properties />
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>343</line>
+          <properties />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>344</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>371</line>
+          <properties />
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>391</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>400</line>
+          <properties />
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt</url>
+          <line>406</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/track_info.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toast_layout1.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_item1.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/spinner_item.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main_new.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/SettingsFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/viewpager/ProfileFragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c43ec2800c291128de85484899667c27/material-1.0.0/jars/classes.jar!/com/google/android/material/tabs/TabLayout.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="119">
+          <caret line="85" column="13" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/ViewPagerAdapterNew.kt" />
+    <entry file="file://$USER_HOME$/Desktop/backuptab/list_layout_heroes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="206" lean-forward="true" selection-end-line="393" selection-end-column="17" />
+          <folding>
+            <element signature="e#11217#17367#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_layout_heroes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="387" selection-start-line="387" selection-end-line="387" />
+          <folding>
+            <element signature="e#11217#17367#0" />
+            <element signature="e#11467#14292#0" />
+          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/montly_report_alert.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home__parent.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="85" column="44" selection-start-line="85" selection-start-column="44" selection-end-line="85" selection-end-column="44" />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_layout_studentlist.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_layout_routelist.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_stoppage_report.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_speed_report.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_idle_report.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_parent__details.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="android-designer2" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/adapter/ViewPagerAdapter.kt" />
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4874" />
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard_vehiclelist.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="314">
-          <caret line="130" column="45" selection-start-line="130" selection-start-column="29" selection-end-line="130" selection-end-column="45" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/49e3f514b3dc8f2569127ef60aa210ad/cardview-1.0.0/res/values/values.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408" />
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_layout_heroes.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="55" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehiclelist_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-481">
-          <caret line="1591" selection-start-line="1591" selection-end-line="1591" />
+          <caret line="131" column="41" selection-start-line="131" selection-start-column="41" selection-end-line="131" selection-end-column="41" />
           <folding>
-            <element signature="e#9412#9687#0" />
-            <element signature="e#9693#14701#0" />
-            <element signature="e#14707#22982#0" />
-            <element signature="e#22988#23134#0" />
-            <element signature="e#23140#23492#0" />
-            <element signature="e#24156#24415#0" />
-            <element signature="e#24425#26876#0" />
-            <element signature="e#26987#27077#0" />
-            <element signature="class#27123:28249" />
-            <element signature="e#159772#161040#0" />
+            <element signature="e#732#1285#0" />
+            <element signature="e#1296#5264#0" />
           </folding>
         </state>
       </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/HomeFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="78" lean-forward="true" selection-start-line="19" selection-start-column="78" selection-end-line="19" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HomeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="928">
+          <caret line="234" column="28" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#opennfrag#0;class#HomeActivity#0" />
+            <element signature="method#onCreateOptionsMenu#0;class#HomeActivity#0" />
+            <element signature="method#onOptionsItemSelected#0;class#HomeActivity#0" />
+            <element signature="method#onNavigationItemSelected#0;class#HomeActivity#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HomeActivity_new.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/nav_secondary.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="20" column="81" selection-start-line="20" selection-start-column="81" selection-end-line="20" selection-end-column="81" />
+        </state>
+      </provider>
+      <provider editor-type-id="nav-designer" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/Dashboard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="161" column="54" selection-start-line="161" selection-start-column="54" selection-end-line="161" selection-end-column="54" />
-          <folding>
-            <element signature="e#2670#2679#0" expanded="true" />
-            <element signature="class#OnFragmentInteractionListener#0;class#Dashboard#0" />
-            <element signature="e#15281#15478#0" expanded="true" />
-            <element signature="e#15477#15478#0" expanded="true" />
-            <element signature="e#15447#15665#0" expanded="true" />
-            <element signature="e#15664#15665#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="85">
+          <caret line="177" column="58" selection-start-line="177" selection-start-column="52" selection-end-line="177" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/kite_eye.png">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/Constants/Url.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/Vehiclepoints.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/kite.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/kite_trans.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/kite_eye_appicon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HolidatStatusActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehiclelist_Fragment.kt" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehicleList.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <caret line="660" column="25" lean-forward="true" selection-start-line="660" selection-start-column="25" selection-end-line="660" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/HolidayActivity.kt">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-76">
-          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="13" selection-end-line="81" selection-end-column="46" />
-          <folding>
-            <element signature="e#3828#4562#2" />
-            <element signature="e#4575#6241#0" />
-            <element signature="e#6426#10050#0" />
-            <element signature="e#10098#10978#0" />
-            <element signature="e#11057#11549#0" />
-          </folding>
+        <state relative-caret-position="232">
+          <caret line="22" column="63" lean-forward="true" selection-start-line="22" selection-start-column="63" selection-end-line="22" selection-end-column="63" />
         </state>
       </provider>
+      <provider editor-type-id="nav-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/frament_history_tracking.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="66" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MPChartLib/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-330" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/Admin_Fragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="64" column="13" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/PArentHistoryTrackingDetails.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="515" column="35" selection-start-line="515" selection-start-column="35" selection-end-line="515" selection-end-column="35" />
-          <folding>
-            <element signature="e#14259#20306#0" />
-            <element signature="e#27071#27853#0" />
-            <element signature="e#36186#36662#0" />
-            <element signature="e#36747#37886#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/SplashScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2316">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newactivities/LoginActivity_New.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="156" column="39" selection-start-line="156" selection-start-column="39" selection-end-line="156" selection-end-column="39" />
-          <folding>
-            <element signature="e#5303#11347#0" expanded="true" />
-            <element signature="e#11346#11347#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Route.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Duration.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Example.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/OverviewPolyline.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Leg.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/volley/POJO/Distance.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_allpoints.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/Constants/remote/IGoogleApi.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="29" column="173" selection-start-line="29" selection-start-column="173" selection-end-line="29" selection-end-column="173" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/rounded_corner_map.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9a34599a456c868c1d01cfa6ff650cd/jetified-play-services-maps-15.0.1/jars/classes.jar!/com/google/android/gms/maps/model/Marker.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="151" column="22" selection-start-line="151" selection-start-column="22" selection-end-line="151" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/edittext_noneditable.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/edittext_duration.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/toolbar_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="50" selection-start-line="69" selection-start-column="50" selection-end-line="69" selection-end-column="50" />
+        <state relative-caret-position="85">
+          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9a34599a456c868c1d01cfa6ff650cd/jetified-play-services-maps-15.0.1/jars/classes.jar!/com/google/android/gms/maps/OnMapReadyCallback.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="498" selection-start-line="498" selection-end-line="498" />
-          <folding>
-            <element signature="e#38#2647#0" expanded="true" />
-            <element signature="e#4935#5386#0" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a9a34599a456c868c1d01cfa6ff650cd/jetified-play-services-maps-15.0.1/jars/classes.jar!/com/google/android/gms/maps/SupportMapFragment.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="155" column="16" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_historytracking.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/HistoryTrackingFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="93" column="57" selection-start-line="93" selection-start-column="57" selection-end-line="93" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
-          <caret line="48" column="53" selection-start-line="48" selection-start-column="53" selection-end-line="48" selection-end-column="53" />
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_tab.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+        <state relative-caret-position="102">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/tab_background_selected.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/tab_background.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/tab_layout_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_layout_adapter.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="258" lean-forward="true" selection-start-line="258" selection-end-line="258" />
           <folding>
-            <element signature="e#2300#3427#0" />
-            <element signature="e#2947#2962#0" expanded="true" />
-            <element signature="e#3206#3221#0" expanded="true" />
-            <element signature="e#3268#3283#0" expanded="true" />
-            <element signature="e#3381#3396#0" expanded="true" />
-            <element signature="e#3976#3990#0" expanded="true" />
-            <element signature="e#4038#4052#0" expanded="true" />
-            <element signature="e#4445#4460#0" expanded="true" />
-            <element signature="e#4508#4523#0" expanded="true" />
-            <element signature="e#4816#4830#0" expanded="true" />
-            <element signature="e#4878#4892#0" expanded="true" />
+            <element signature="e#1086#11796#0" />
+            <element signature="e#12366#12381#0" expanded="true" />
+            <element signature="e#12420#12434#0" expanded="true" />
           </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="104" column="65" selection-start-line="104" selection-start-column="65" selection-end-line="104" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_livestatus_info.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="141" column="24" selection-start-line="141" selection-start-column="24" selection-end-line="141" selection-end-column="24" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/backuptab/DashboardVehicleList.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="195" column="104" selection-start-line="195" selection-start-column="83" selection-end-line="195" selection-end-column="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/MapsActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="200" column="19" selection-start-line="200" selection-start-column="19" selection-end-line="200" selection-end-column="19" />
+          <folding>
+            <element signature="e#15611#19232#0" />
+            <element signature="e#19349#19760#0" />
+            <element signature="e#21963#22664#0" />
+            <element signature="e#24701#25579#0" />
+            <element signature="e#25623#26741#0" />
+            <element signature="e#26848#27614#0" />
+            <element signature="e#28236#29328#0" />
+            <element signature="e#30086#32642#0" />
+            <element signature="e#32702#33729#0" />
+            <element signature="e#33802#39647#0" />
+            <element signature="e#39732#41671#0" />
+            <element signature="e#41749#45939#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_livetracking.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="52" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/DashboardVehicleList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3944">
+          <caret line="295" column="86" selection-start-line="295" selection-start-column="86" selection-end-line="295" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newhelpers/QvVehiclesList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="181" selection-start-line="181" selection-end-line="181" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LiveStatus.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="33" />
+          <folding>
+            <element signature="e#29935#31695#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/newConstants/Url_new.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/tecdatum/Tracking/School/fragments/LivetrackingFragment.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="637" column="35" lean-forward="true" selection-start-line="637" selection-start-column="35" selection-end-line="637" selection-end-column="35" />
+          <folding>
+            <element signature="e#6759#7374#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

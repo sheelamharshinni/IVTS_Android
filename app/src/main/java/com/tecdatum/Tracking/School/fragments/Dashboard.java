@@ -44,6 +44,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.Navigation;
 
 import static android.content.Context.MODE_PRIVATE;
 import static com.tecdatum.Tracking.School.newactivities.SplashScreen.MY_PREFS_NAME;
@@ -172,17 +173,21 @@ public class Dashboard extends Fragment {
                             bankcardId_bus.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-
-                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
                                     Bundle args = new Bundle();
                                     args.putString("TYPE", "Car");
                                     args.putString("STATUS", "Run");
-                                    fragment.setArguments(args);
-                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
-                                    fragmentTransaction.addToBackStack(null);
-                                    fragmentTransaction.commit();
+                                    Navigation.findNavController(v).navigate(R.id.action_MainBottomFragment_to_DashBoardVehicleFragment,args);
+
+//                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
+//                                    Bundle args = new Bundle();
+//                                    args.putString("TYPE", "Car");
+//                                    args.putString("STATUS", "Run");
+//                                    fragment.setArguments(args);
+//                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
+//                                    fragmentTransaction.addToBackStack(null);
+//                                    fragmentTransaction.commit();
                                 }
                             });
                         }
@@ -191,21 +196,20 @@ public class Dashboard extends Fragment {
                             cardciew_Stop_bus.setOnClickListener(new View.OnClickListener() {
                                 @Override
                                 public void onClick(View v) {
-
-
-                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
                                     Bundle args = new Bundle();
-
-
                                     args.putString("TYPE", "Car");
                                     args.putString("STATUS", "Stop");
-
-                                    fragment.setArguments(args);
-                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
-                                    fragmentTransaction.addToBackStack(null);
-                                    fragmentTransaction.commit();
+                                    Navigation.findNavController(v).navigate(R.id.action_MainBottomFragment_to_DashBoardVehicleFragment,args);
+//                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
+//                                    Bundle args = new Bundle();
+//                                    args.putString("TYPE", "Car");
+//                                    args.putString("STATUS", "Stop");
+//                                    fragment.setArguments(args);
+//                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
+//                                    fragmentTransaction.addToBackStack(null);
+//                                    fragmentTransaction.commit();
 
                                 }
                             });
@@ -217,18 +221,21 @@ public class Dashboard extends Fragment {
                                 @Override
                                 public void onClick(View v) {
 
-
-                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
                                     Bundle args = new Bundle();
-
                                     args.putString("TYPE", "Car");
                                     args.putString("STATUS", "Idle");
-                                    fragment.setArguments(args);
-                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
-                                    fragmentTransaction.addToBackStack(null);
-                                    fragmentTransaction.commit();
+                                    Navigation.findNavController(v).navigate(R.id.action_MainBottomFragment_to_DashBoardVehicleFragment,args);
+//                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
+//                                    Bundle args = new Bundle();
+//
+//                                    args.putString("TYPE", "Car");
+//                                    args.putString("STATUS", "Idle");
+//                                    fragment.setArguments(args);
+//                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
+//                                    fragmentTransaction.addToBackStack(null);
+//                                    fragmentTransaction.commit();
 
                                 }
                             });
@@ -242,19 +249,23 @@ public class Dashboard extends Fragment {
                                 @Override
                                 public void onClick(View v) {
 
-
-                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
                                     Bundle args = new Bundle();
-
                                     args.putString("TYPE", "Car");
                                     args.putString("STATUS", "Nosignal");
+                                    Navigation.findNavController(v).navigate(R.id.action_MainBottomFragment_to_DashBoardVehicleFragment,args);
 
-                                    fragment.setArguments(args);
-                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
-                                    fragmentTransaction.addToBackStack(null);
-                                    fragmentTransaction.commit();
+//                                    DashboardVehiclelist_Fragment fragment = new DashboardVehiclelist_Fragment();
+//                                    Bundle args = new Bundle();
+//
+//                                    args.putString("TYPE", "Car");
+//                                    args.putString("STATUS", "Nosignal");
+//
+//                                    fragment.setArguments(args);
+//                                    FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+//                                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+//                                    fragmentTransaction.replace(R.id.tabFrameLayout, fragment);
+//                                    fragmentTransaction.addToBackStack(null);
+//                                    fragmentTransaction.commit();
 
                                 }
                             });

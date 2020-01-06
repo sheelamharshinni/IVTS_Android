@@ -2,10 +2,12 @@ package com.tecdatum.Tracking.School.newhelpers;
 
 public class QvVehiclesList {
     String vehicle_Id, VehicleRegNo, Vehicle, Vehicletype, Sincefrom,
-            Livedatetime, DriverName, MobileNo, VehicleStatus, Location, Latitude,Longitude,AcStatus,Gpsstatus,Speed,Ignition,Model;
+            Livedatetime, DriverName, MobileNo, VehicleStatus, Location, Latitude,Longitude,AcStatus,Gpsstatus,Speed,Ignition,Model,PickRoute,DropRoute;
     private boolean expanded;
 
-    public QvVehiclesList(String vehicle_Id, String vehicleRegNo, String vehicle, String vehicletype, String sincefrom, String livedatetime, String driverName, String mobileNo, String vehicleStatus, String location, String latitude, String longitude, String acStatus, String gpsstatus, String speed, String ignition, String model) {
+
+
+    public QvVehiclesList(String vehicle_Id, String vehicleRegNo, String vehicle, String vehicletype, String sincefrom, String livedatetime, String driverName, String mobileNo, String vehicleStatus, String location, String latitude, String longitude, String acStatus, String gpsstatus, String speed, String ignition, String model, String pickRoute, String dropRoute) {
         this.vehicle_Id = vehicle_Id;
         VehicleRegNo = vehicleRegNo;
         Vehicle = vehicle;
@@ -23,6 +25,8 @@ public class QvVehiclesList {
         Speed = speed;
         Ignition = ignition;
         Model = model;
+        PickRoute=pickRoute;
+        DropRoute=dropRoute;
     }
 
     public boolean isExpanded() {
@@ -167,5 +171,20 @@ public class QvVehiclesList {
 
     public void setModel(String model) {
         Model = model;
+    }
+    public String getPickRoute() {
+        return PickRoute;
+    }
+
+    public void setPickRoute(String pickRoute) {
+        PickRoute = pickRoute;
+    }
+
+    public String getDropRoute() {
+        return DropRoute;
+    }
+
+    public void setDropRoute(String dropRoute) {
+        DropRoute = dropRoute;
     }
 }

@@ -5,18 +5,18 @@
         android:icon="@mipmap/ic_dashboard"
         android:title="@string/title_dashboard" />
     <item
-        android:id="@+id/navigation_qv"
+        android:id="@+id/navigation_qv_new"
         android:icon="@mipmap/ic_list"
         android:title="QuickView" />
 
 
     <item
-        android:id="@+id/navigation_report"
+        android:id="@+id/navigation_report_new"
         android:icon="@mipmap/ic_report"
         android:title="Report" />
 
     <item
-        android:id="@+id/navigation_administartion"
+        android:id="@+id/navigation_administartion_new"
         android:icon="@mipmap/ic_profile"
         android:title="Admin" />
 

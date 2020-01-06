@@ -1,6 +1,5 @@
 package com.tecdatum.Tracking.School.newactivities;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
@@ -26,7 +25,7 @@ import com.tecdatum.Tracking.School.R;
 import com.tecdatum.Tracking.School.fragments.Admin_Fragment;
 import com.tecdatum.Tracking.School.fragments.ContactUS;
 import com.tecdatum.Tracking.School.fragments.Dashboard;
-import com.tecdatum.Tracking.School.fragments.DashboardVehiclelist_Fragment;
+import com.tecdatum.Tracking.School.fragments.DashboardVehicleList;
 import com.tecdatum.Tracking.School.fragments.MonthDayReport_Fragment;
 
 import static com.tecdatum.Tracking.School.newactivities.SplashScreen.MY_PREFS_NAME;
@@ -49,7 +48,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                 HomeActivity.this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = (NavigationView) findViewById(R.id.navigationView);
         navigationView.setNavigationItemSelectedListener(this);
         drawer.setScrimColor(Color.TRANSPARENT);
         drawer.addDrawerListener(new DrawerLayout.SimpleDrawerListener() {
@@ -183,17 +182,16 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
-
+            boolean selected = false;
             switch (item.getItemId()) {
                 case R.id.navigation_dashboard:
                     //  toolbar.setTitle("Dashboard");
                     Dashboard fr = new Dashboard();
                     opennfrag(fr);
-                    return true;
+                    selected=true;
+                    break;
                 case R.id.navigation_qv:
-
-
-                    DashboardVehiclelist_Fragment fragmet = new DashboardVehiclelist_Fragment();
+                    DashboardVehicleList fragmet = new DashboardVehicleList();
                     Bundle args = new Bundle();
                     args.putString("Car", "Car");
                     args.putString("Run", "Run");
@@ -204,7 +202,9 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
                     // toolbar.setTitle("QuickView");
-                    return true;
+                    selected=true;
+                    break;
+
                 case R.id.navigation_administartion:
 
 
@@ -218,10 +218,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     fragmentTransaction.replace(R.id.tabFrameLayout, adm);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
-
-
-                    return true;
+                    selected=true;
+                    break;
                 case R.id.navigation_report:
+
                     MonthDayReport_Fragment frag = new MonthDayReport_Fragment();
 
                     FragmentManager fragmentManager1 = getSupportFragmentManager();
@@ -230,9 +230,14 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
                     fragmentTransaction1.addToBackStack(null);
                     fragmentTransaction1.commit();
                     // toolbar.setTitle("Reports");
-                    return true;
+                    selected=true;
+                    break;
+                    default:
+                        Dashboard frs = new Dashboard();
+                        opennfrag(frs);
+                        break;
             }
-            return false;
+            return  selected;
         }
     };
 

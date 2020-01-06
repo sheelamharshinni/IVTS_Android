@@ -3,7 +3,7 @@
     android:id="@+id/rv1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@color/textcolor_white"
     android:orientation="vertical"
     android:scrollbarAlwaysDrawVerticalTrack="true">
 
@@ -16,7 +16,7 @@
         android:gravity="center"
         android:padding="3dp"
         android:text="Contact Us"
-        android:textColor="#f0f4f5"
+        android:textColor="@color/colorPrimary"
         android:textSize="18dp"
         android:textStyle="bold" />
 

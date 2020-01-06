@@ -43,7 +43,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="p">
-        <activity android:name=".newactivities.HolidatStatusActivity"/>
+        <activity android:name=".newactivities.HolidatStatusActivity" />
 
         <uses-library
             android:name="org.apache.http.legacy"
@@ -92,6 +92,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".newactivities.HomeActivity_new"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="android.app.default_searchable"
